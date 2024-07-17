@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int a = 3,b,c;
     b = 2 * (a++);
     c = 2 * (++a);

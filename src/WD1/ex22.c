@@ -1,18 +1,16 @@
 #include <stdio.h>
 
-#define PI 22.0/7
+int main() {
+    const float pi = 22.0/7;
+    float radius, area;
 
-int main()
-{
-    float radius;
+    printf("Enter radius: ");
+    scanf("%f", &radius);
 
-    printf ("Enter radius: ");
-    scanf ("%f", &radius);
+    area = pi * radius * radius;
 
-    float area = PI * radius * radius;
-
-    printf("Radius of the circle is: \t%.2f\n" , radius);
-    printf("Area of the circle is: \t\t%.2f\n" , area);
+    printf("Radius of the circle is:\t%.2f\n" , radius);
+    printf("Area of the circle is:\t\t%.2f\n" , area);
 
     return 0;
 }
